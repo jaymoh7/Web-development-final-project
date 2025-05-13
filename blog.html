@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search posts...">
+            <button onclick="searchPosts()">Search</button>
+        </div>
+        <div class="blog-container">
+            <aside class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" onclick="filterPosts('all')">All Posts</a></li>
+                    <li><a href="#" onclick="filterPosts('web-development')">Web Development</a></li>
+                    <li><a href="#" onclick="filterPosts('css')">CSS</a></li>
+                    <li><a href="#" onclick="filterPosts('javascript')">JavaScript</a></li>
+                    <li><a href="#" onclick="filterPosts('design')">Design</a></li>
+                    <li><a href="#" onclick="filterPosts('tools')">Tools & Tips</a></li>
+                </ul>
+            </aside>
+            <section class="blog-posts" id="blogPosts">
+                <article class="blog-post" data-category="web-development">
+                    <h2>The Future of Web Development</h2>
+                    <p class="post-meta">Posted on March 15, 2024 | Category: Web Development</p>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop" alt="Web Development Future" class="post-image">
+                    <p>The landscape of web development is constantly evolving. With the rise of AI-powered tools and frameworks, developers are finding new ways to build faster, more efficient applications. In this comprehensive guide, we'll explore the latest trends and technologies shaping the future of web development.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" data-category="css">
+                    <h2>Getting Started with CSS Grid</h2>
+                    <p class="post-meta">Posted on March 10, 2024 | Category: CSS</p>
+                    <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&h=400&fit=crop" alt="CSS Grid" class="post-image">
+                    <p>CSS Grid has revolutionized the way we create layouts on the web. This powerful tool allows developers to create complex, responsive designs with ease. Learn the basics of CSS Grid and how to implement it in your projects.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" data-category="javascript">
+                    <h2>Modern JavaScript Features You Should Know</h2>
+                    <p class="post-meta">Posted on March 8, 2024 | Category: JavaScript</p>
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop" alt="Modern JavaScript" class="post-image">
+                    <p>ES6+ has brought many powerful features to JavaScript. From arrow functions to async/await, these features have transformed how we write JavaScript code. Let's explore the most important modern JavaScript features and how to use them effectively.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" data-category="design">
+                    <h2>Creating Accessible Web Designs</h2>
+                    <p class="post-meta">Posted on March 5, 2024 | Category: Design</p>
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=400&fit=crop" alt="Accessible Design" class="post-image">
+                    <p>Web accessibility is not just a trend—it's a necessity. Learn how to create designs that are inclusive and accessible to all users, regardless of their abilities or disabilities.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" data-category="tools">
+                    <h2>Essential Web Development Tools for 2024</h2>
+                    <p class="post-meta">Posted on March 3, 2024 | Category: Tools & Tips</p>
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop" alt="Web Development Tools" class="post-image">
+                    <p>Stay productive and efficient with these must-have web development tools. From code editors to browser extensions, discover the tools that will enhance your development workflow.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" data-category="javascript">
+                    <h2>Understanding JavaScript Promises</h2>
+                    <p class="post-meta">Posted on March 1, 2024 | Category: JavaScript</p>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=400&fit=crop" alt="JavaScript Promises" class="post-image">
+                    <p>Promises are a fundamental concept in modern JavaScript. Learn how to work with promises effectively and handle asynchronous operations in your code.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
